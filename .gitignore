@@ -3,3 +3,5 @@ __pycache__/
 *.class
 .pytest_cache/
 *.egg-info/
+
+.venv/
