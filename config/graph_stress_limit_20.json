@@ -1,0 +1,242 @@
+{
+    "version": "v0.4_stress_test_limit",
+    "nodes": [
+        {
+            "id": "void_0",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.0608106045674826
+            }
+        },
+        {
+            "id": "void_1",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.7489616064476718
+            }
+        },
+        {
+            "id": "void_2",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.6644964366013683
+            }
+        },
+        {
+            "id": "void_3",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.3247686220640809
+            }
+        },
+        {
+            "id": "void_4",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.7640120930185307
+            }
+        },
+        {
+            "id": "void_5",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.6829132534230167
+            }
+        },
+        {
+            "id": "void_6",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.362062531336539
+            }
+        },
+        {
+            "id": "void_7",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.0903488334040314
+            }
+        },
+        {
+            "id": "void_8",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.7584143514403214
+            }
+        },
+        {
+            "id": "void_9",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.0142245467165178
+            }
+        },
+        {
+            "id": "void_10",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.77918453855056
+            }
+        },
+        {
+            "id": "void_11",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.9938577869199645
+            }
+        },
+        {
+            "id": "void_12",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.4524915866822603
+            }
+        },
+        {
+            "id": "void_13",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.0192406877118136
+            }
+        },
+        {
+            "id": "void_14",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.7170545823514198
+            }
+        },
+        {
+            "id": "void_15",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.9953108098680459
+            }
+        },
+        {
+            "id": "void_16",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.2553203193148224
+            }
+        },
+        {
+            "id": "void_17",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.0209830946219756
+            }
+        },
+        {
+            "id": "void_18",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 1.2297141105508707
+            }
+        },
+        {
+            "id": "void_19",
+            "type": "SupercellCouplingNode",
+            "params": {
+                "coupling_strength": 0.9947957000134997
+            }
+        }
+    ],
+    "connections": [
+        {
+            "source": "void_0",
+            "target": "void_1",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_1",
+            "target": "void_2",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_2",
+            "target": "void_3",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_3",
+            "target": "void_4",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_4",
+            "target": "void_5",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_5",
+            "target": "void_6",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_6",
+            "target": "void_7",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_7",
+            "target": "void_8",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_8",
+            "target": "void_9",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_9",
+            "target": "void_10",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_10",
+            "target": "void_11",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_11",
+            "target": "void_12",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_12",
+            "target": "void_13",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_13",
+            "target": "void_14",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_14",
+            "target": "void_15",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_15",
+            "target": "void_16",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_16",
+            "target": "void_17",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_17",
+            "target": "void_18",
+            "type": "supercell_link"
+        },
+        {
+            "source": "void_18",
+            "target": "void_19",
+            "type": "supercell_link"
+        }
+    ]
+}

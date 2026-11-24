@@ -1,0 +1,80 @@
+{
+  "all_assertions_passed": true,
+  "configuration": {
+    "drive_amplitude": 0.35,
+    "dt": 0.02,
+    "n_cells": 12,
+    "ring_dynamic_coupling": 0.35,
+    "steps": 400
+  },
+  "coupling_and_acceleration_check": {
+    "acceleration_same_across_runs_with_identical_physical_state": true,
+    "cases": {
+      "0.0": {
+        "dynamic_link_rms": 0.06209204205650663,
+        "final_acceleration_l2": 0.7018199945432749,
+        "ring_order_dynamic": 0.9977786007011223
+      },
+      "0.35": {
+        "dynamic_link_rms": 0.0700742122053653,
+        "final_acceleration_l2": 0.7018199945432749,
+        "ring_order_dynamic": 0.9971710376025186
+      }
+    },
+    "dynamic_link_directly_affects_acceleration": false,
+    "interpretation": "The extension evolves dynamic_link and diagnoses it, but inherited acceleration uses static link_A; changing only dynamic_link does not change acceleration.",
+    "positive_coupling_changes_dynamic_link_from_zero_case": true
+  },
+  "ensemble": {
+    "energy_proxy": {
+      "coefficient_of_variation": 0.015513444863504765,
+      "mean": 0.011387784198814753,
+      "sample_std_ddof_1": 0.00017666376228580346
+    },
+    "ring_order": {
+      "coefficient_of_variation": 7.576112746354161e-06,
+      "mean": 0.9971758170983144,
+      "sample_std_ddof_1": 7.554716418274665e-06
+    },
+    "seed_results": [
+      {
+        "dynamic_link_rms": 0.0700742122053653,
+        "final_energy_proxy": 0.011361622432979949,
+        "final_ring_order": 0.9971710376025186,
+        "seed": 7,
+        "steps": 400
+      },
+      {
+        "dynamic_link_rms": 0.06990686900971824,
+        "final_energy_proxy": 0.011225660183366615,
+        "final_ring_order": 0.9971845267398122,
+        "seed": 42,
+        "steps": 400
+      },
+      {
+        "dynamic_link_rms": 0.07006368712843676,
+        "final_energy_proxy": 0.011576069980097692,
+        "final_ring_order": 0.9971718869526124,
+        "seed": 100,
+        "steps": 400
+      }
+    ],
+    "seeds": [
+      7,
+      42,
+      100
+    ],
+    "steps": 400
+  },
+  "invariance_checks": {
+    "global_phase_energy_proxy_abs_delta": 1.734723475976807e-18,
+    "global_phase_ring_order_abs_delta": 0.0,
+    "global_phase_rms_strain_abs_delta": 0.0,
+    "global_phase_shift": 1.23456789,
+    "orientation_reversal_flux_rms_abs_delta": 0.0,
+    "orientation_reversal_ring_order_abs_delta": 0.0,
+    "tolerance": 1e-12
+  },
+  "model_source": "/mnt/data/.sdf_vortex_validation_source/sdf_local_lattice_dynamic_ring.py",
+  "model_status": "exploratory phenomenological toy model; not validated physics"
+}

@@ -1,0 +1,41 @@
+{
+  "all_tests_passed": true,
+  "edge_current_architecture": {
+    "blend_equation": "link_eff = (1 - blend) * link_A + blend * dynamic_link",
+    "default_mode": "static",
+    "dynamic_equation": "link_eff = dynamic_link",
+    "ring_dynamic_coupling_role": "controls dynamic_link relaxation, not blend fraction",
+    "static_equation": "link_eff = link_A"
+  },
+  "energy_statement": "mean_energy_proxy is diagnostic only; conservation is not claimed.",
+  "errors": 0,
+  "failures": 0,
+  "regression_metrics": {
+    "face_reversal_cosine_order_difference": 0.0,
+    "face_reversal_flux_rms_difference": 0.0,
+    "face_reversal_max_flux_sum_abs": 0.0,
+    "nonzero_coupling_dynamic_vs_static_max_acceleration_difference": 0.014120606143823253,
+    "nonzero_coupling_dynamic_vs_static_max_phase_difference": 0.0028796506929869847,
+    "zero_coupling_static_max_phase_error_after_30_steps": 0.0
+  },
+  "source_logic": "SDF-Vortex-(3).zip baseline and dynamic-ring source",
+  "test_results": [
+    {
+      "status": "PASS",
+      "test": "RingFeedbackRegressionTests.test_zero_coupling_static_matches_baseline_trajectory"
+    },
+    {
+      "status": "PASS",
+      "test": "RingFeedbackRegressionTests.test_dynamic_current_changes_phase_acceleration"
+    },
+    {
+      "status": "PASS",
+      "test": "RingFeedbackRegressionTests.test_face_orientation_reversal_sign_and_invariant_metrics"
+    },
+    {
+      "status": "PASS",
+      "test": "RingFeedbackRegressionTests.test_blend_equation_and_validation"
+    }
+  ],
+  "tests_run": 4
+}

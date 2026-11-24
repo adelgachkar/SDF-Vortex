@@ -1,0 +1,188 @@
+{
+  "analysis_label": "diagnostic-proxy behavior; not a physical energy conservation test",
+  "configuration": {
+    "base_seed": 7,
+    "drive_amplitude": 0.35,
+    "dt": 0.02,
+    "n_cells": 12,
+    "ring_dynamic_coupling": 0.35,
+    "steps": 400
+  },
+  "energy_proxy_trajectory": {
+    "absolute_drift": 0.009087814816627845,
+    "final": 0.011361622432979949,
+    "finite": true,
+    "finite_count": 400,
+    "first_five": [
+      0.002273807616352104,
+      0.002280789974793569,
+      0.0022923176992771794,
+      0.0023082675392136934,
+      0.002328489339633397
+    ],
+    "initial": 0.002273807616352104,
+    "last_five": [
+      0.01120824087444381,
+      0.01124441747718934,
+      0.011282072167375676,
+      0.011321158898037153,
+      0.011361622432979949
+    ],
+    "linear_least_squares_slope": 0.0011565416220270608,
+    "max": 0.011361622432979949,
+    "max_absolute_one_step_increment": 6.166522706282235e-05,
+    "min": 0.002273807616352104,
+    "monotonic_decreasing": false,
+    "monotonic_increasing": false,
+    "relative_drift": 3.9967386648161254,
+    "total_count": 400
+  },
+  "limitations": [
+    "mean_energy_proxy is not calibrated physical energy.",
+    "Drive, damping, relaxation, and feedback can change the proxy.",
+    "Parameter variations are sensitivity/behavior tests and do not by themselves prove a thermodynamic dissipation law.",
+    "The dynamic_link field is not in acceleration if confirmed by source checks."
+  ],
+  "relaxation_polarization_cases": [
+    {
+      "absolute_drift": 0.009087814816627845,
+      "case": "baseline",
+      "density_relaxation": 0.8,
+      "drift_delta_vs_baseline": 0.0,
+      "final_energy_delta_vs_baseline": 0.0,
+      "final_mean_density": 0.17495196188741238,
+      "final_mean_energy_proxy": 0.011361622432979949,
+      "final_mean_polarization": 0.23914775462905724,
+      "final_ring_order_dynamic": 0.9971710376025186,
+      "final_rms_strain": 0.06871399933723575,
+      "initial_mean_energy_proxy": 0.002273807616352104,
+      "max_absolute_one_step_increment": 6.166522706282235e-05,
+      "max_mean_energy_proxy": 0.011361622432979949,
+      "min_mean_energy_proxy": 0.002273807616352104,
+      "polarization_coupling": 0.25,
+      "slope": 0.0011565416220270608,
+      "status": "ok",
+      "trajectory_finite": true
+    },
+    {
+      "case": "density_relaxation_zero",
+      "density_relaxation": 0.0,
+      "drift_delta_vs_baseline": null,
+      "error": "density_relaxation must be finite and positive",
+      "error_type": "ValueError",
+      "final_energy_delta_vs_baseline": null,
+      "polarization_coupling": 0.25,
+      "status": "error",
+      "trajectory_finite": null
+    },
+    {
+      "absolute_drift": 0.01027366439687395,
+      "case": "density_relaxation_high",
+      "density_relaxation": 1.6,
+      "drift_delta_vs_baseline": 0.0011858495802461056,
+      "final_energy_delta_vs_baseline": 0.001185847714449892,
+      "final_mean_density": 0.16380859387804694,
+      "final_mean_energy_proxy": 0.01254747014742984,
+      "final_mean_polarization": 0.23597221879799934,
+      "final_ring_order_dynamic": 0.9971743101332319,
+      "final_rms_strain": 0.06736131686705989,
+      "initial_mean_energy_proxy": 0.0022738057505558903,
+      "max_absolute_one_step_increment": 6.623377506559391e-05,
+      "max_mean_energy_proxy": 0.01254747014742984,
+      "min_mean_energy_proxy": 0.0022738057505558903,
+      "polarization_coupling": 0.25,
+      "slope": 0.001371144347049077,
+      "status": "ok",
+      "trajectory_finite": true
+    },
+    {
+      "absolute_drift": 0.009087814816627845,
+      "case": "polarization_coupling_zero",
+      "density_relaxation": 0.8,
+      "drift_delta_vs_baseline": 0.0,
+      "final_energy_delta_vs_baseline": 0.0,
+      "final_mean_density": 0.17495196188741238,
+      "final_mean_energy_proxy": 0.011361622432979949,
+      "final_mean_polarization": 0.20317250724978067,
+      "final_ring_order_dynamic": 0.9972170226098979,
+      "final_rms_strain": 0.06871399933723575,
+      "initial_mean_energy_proxy": 0.002273807616352104,
+      "max_absolute_one_step_increment": 6.166522706282235e-05,
+      "max_mean_energy_proxy": 0.011361622432979949,
+      "min_mean_energy_proxy": 0.002273807616352104,
+      "polarization_coupling": 0.0,
+      "slope": 0.0011565416220270608,
+      "status": "ok",
+      "trajectory_finite": true
+    },
+    {
+      "absolute_drift": 0.009087814816627845,
+      "case": "polarization_coupling_high",
+      "density_relaxation": 0.8,
+      "drift_delta_vs_baseline": 0.0,
+      "final_energy_delta_vs_baseline": 0.0,
+      "final_mean_density": 0.17495196188741238,
+      "final_mean_energy_proxy": 0.011361622432979949,
+      "final_mean_polarization": 0.27512300200833384,
+      "final_ring_order_dynamic": 0.9971241250889166,
+      "final_rms_strain": 0.06871399933723575,
+      "initial_mean_energy_proxy": 0.002273807616352104,
+      "max_absolute_one_step_increment": 6.166522706282235e-05,
+      "max_mean_energy_proxy": 0.011361622432979949,
+      "min_mean_energy_proxy": 0.002273807616352104,
+      "polarization_coupling": 0.5,
+      "slope": 0.0011565416220270608,
+      "status": "ok",
+      "trajectory_finite": true
+    }
+  ],
+  "ring_order_ensemble": {
+    "coefficient_of_variation": 6.2478461654533305e-06,
+    "max": 0.9971845267398122,
+    "mean": 0.9971749714446337,
+    "min": 0.9971694750566235,
+    "sample_standard_deviation_ddof_1": 6.230195821626389e-06,
+    "seed_results": [
+      {
+        "final_ring_order_dynamic": 0.9971710376025186,
+        "finite": true,
+        "seed": 7
+      },
+      {
+        "final_ring_order_dynamic": 0.9971845267398122,
+        "finite": true,
+        "seed": 42
+      },
+      {
+        "final_ring_order_dynamic": 0.9971718869526124,
+        "finite": true,
+        "seed": 100
+      },
+      {
+        "final_ring_order_dynamic": 0.9971694750566235,
+        "finite": true,
+        "seed": 200
+      },
+      {
+        "final_ring_order_dynamic": 0.9971779308716019,
+        "finite": true,
+        "seed": 314
+      }
+    ]
+  },
+  "self_test": {
+    "command": "/usr/local/bin/python /mnt/data/.sdf_vortex_validation_source/sdf_local_lattice.py --self-test",
+    "cwd": "/mnt/data/.sdf_vortex_validation_source",
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "SELF-TEST PASS: reproducibility, topology, finite diagnostics, validation\n"
+  },
+  "source_structural_checks": {
+    "DynamicRingSDFLattice_overrides__acceleration": false,
+    "dynamic_link_passed_into_acceleration_path": false,
+    "mean_energy_proxy_expression": "float(0.5 * self.p.inertia * np.mean(self.velocity ** 2) + self.p.stiffness * np.mean(1 - np.cos(d)))",
+    "mean_energy_proxy_uses_dynamic_link": false,
+    "mean_energy_proxy_uses_link_A": false,
+    "note": "Dynamic extension inherits acceleration; no dynamic_link dependency is present in the base acceleration implementation."
+  }
+}

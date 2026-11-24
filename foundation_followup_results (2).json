@@ -1,0 +1,61 @@
+{
+  "caveat": "Numerical toy-model verification only; not physical validation.",
+  "checks": {
+    "ensemble_seed_count": 3,
+    "feedback_acceleration_max_difference": 0.019257800054423638,
+    "gauge_invariance": true,
+    "orientation_invariance": true,
+    "positive_coupling_changes_phase_acceleration": true,
+    "zero_coupling_matches_baseline": true
+  },
+  "ensemble": {
+    "seeds": [
+      {
+        "energy_proxy": 0.004464799554149142,
+        "ring_order": 0.9970351553931782,
+        "seed": 7
+      },
+      {
+        "energy_proxy": 0.004584315634256054,
+        "ring_order": 0.9970442165882448,
+        "seed": 42
+      },
+      {
+        "energy_proxy": 0.005334077737212983,
+        "ring_order": 0.9970010603884564,
+        "seed": 100
+      }
+    ],
+    "statistics_population_std": {
+      "energy_proxy": {
+        "mean": 0.0047943976418727266,
+        "std": 0.00038471805895649684
+      },
+      "ring_order": {
+        "mean": 0.9970268107899599,
+        "std": 1.8580252908213484e-05
+      }
+    }
+  },
+  "gauge_convention": "phi_i -> phi_i + chi_i; A_ij -> A_ij + chi_j - chi_i",
+  "model": "self-contained phenomenological SDF local lattice with dynamic links",
+  "orientation_convention": "edge links are directed; reversing an edge also negates its link",
+  "parameters": {
+    "damping": 0.08,
+    "density_coupling": 0.18,
+    "density_relaxation": 0.8,
+    "drive_amplitude": 0.35,
+    "dt": 0.02,
+    "dynamic_link_feedback": true,
+    "inertia": 1.0,
+    "leak_strength": 0.3,
+    "n_cells": 6,
+    "polarization_coupling": 0.25,
+    "ring_dynamic_coupling": 0.9,
+    "ring_flux": 0.2,
+    "seed": 19,
+    "stiffness": 1.0,
+    "strain_coupling": 0.2
+  },
+  "steps_per_check": 250
+}

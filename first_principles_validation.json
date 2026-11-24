@@ -1,0 +1,116 @@
+{
+  "controlled_comparison": [
+    {
+      "all_finite": true,
+      "damping": 0.08,
+      "drift": 0.014728757802307856,
+      "drive_amplitude": 0.0,
+      "final_energy": 0.0170025388849858,
+      "linear_slope": 0.0019284159578388034,
+      "maximum_energy": 0.0170025388849858,
+      "minimum_energy": 0.002273781082677945,
+      "seed": 7
+    },
+    {
+      "all_finite": true,
+      "damping": 0.08,
+      "drift": 0.009087814816627845,
+      "drive_amplitude": 0.35,
+      "final_energy": 0.011361622432979949,
+      "linear_slope": 0.001156541622027061,
+      "maximum_energy": 0.011361622432979949,
+      "minimum_energy": 0.002273807616352104,
+      "seed": 7
+    },
+    {
+      "all_finite": true,
+      "damping": 0.0,
+      "drift": 0.02623764240289355,
+      "drive_amplitude": 0.0,
+      "final_energy": 0.028511427890240203,
+      "linear_slope": 0.0032901255609294913,
+      "maximum_energy": 0.028511427890240203,
+      "minimum_energy": 0.0022737854873466517,
+      "seed": 7
+    },
+    {
+      "all_finite": true,
+      "damping": 0.0,
+      "drift": 0.016080371793447547,
+      "drive_amplitude": 0.35,
+      "final_energy": 0.018354183678925193,
+      "linear_slope": 0.001993103195276027,
+      "maximum_energy": 0.018354183678925193,
+      "minimum_energy": 0.002273811885477648,
+      "seed": 7
+    }
+  ],
+  "dt": 0.02,
+  "energy_trajectory": {
+    "absolute_drift": 0.009087814816627845,
+    "all_finite": true,
+    "final_energy": 0.011361622432979949,
+    "initial_energy": 0.002273807616352104,
+    "linear_slope": 0.001156541622027061,
+    "maximum_energy": 0.011361622432979949,
+    "minimum_energy": 0.002273807616352104,
+    "relative_drift": 3.9967386648161254
+  },
+  "ensemble": [
+    {
+      "coefficient_of_variation": 6.2478461654533305e-06,
+      "maximum": 0.9971845267398122,
+      "mean": 0.9971749714446337,
+      "metric": "ring_order_dynamic",
+      "minimum": 0.9971694750566235,
+      "sample_stddev": 6.230195821626389e-06
+    },
+    {
+      "coefficient_of_variation": 0.0011036029395121365,
+      "maximum": 0.07009357102596314,
+      "mean": 0.07002541702584765,
+      "metric": "dynamic_link_rms",
+      "minimum": 0.06990686900971824,
+      "sample_stddev": 7.728025607028868e-05
+    },
+    {
+      "coefficient_of_variation": 0.01520684121557356,
+      "maximum": 0.011618866800093147,
+      "mean": 0.011415497008580307,
+      "metric": "mean_energy_proxy",
+      "minimum": 0.011225660183366615,
+      "sample_stddev": 0.00017359365040633569
+    },
+    {
+      "coefficient_of_variation": 0.033628621361246766,
+      "maximum": 0.07132078320338005,
+      "mean": 0.06872443601584695,
+      "metric": "rms_strain",
+      "minimum": 0.06635877613679092,
+      "sample_stddev": 0.002311108037042147
+    },
+    {
+      "coefficient_of_variation": 0.01034819963083847,
+      "maximum": 0.24235493043460532,
+      "mean": 0.23923872783694358,
+      "metric": "mean_polarization",
+      "minimum": 0.23623381781795816,
+      "sample_stddev": 0.002475690115084525
+    }
+  ],
+  "limitations": [
+    "Exploratory phenomenological toy model, not validated physics.",
+    "Energy is a diagnostic proxy and need not be conserved under drive, damping, relaxation, or imposed link phases.",
+    "No physical units are assigned; values are model diagnostics.",
+    "This is structural/numerical validation only; no empirical calibration, convergence study, or physical inference is established."
+  ],
+  "source": "SDF-Vortex-(3).zip",
+  "steps": 400,
+  "structural_inspection": {
+    "dynamic_class_overrides_acceleration": false,
+    "dynamic_link_affects_acceleration_path": false,
+    "mean_energy_proxy_uses_dynamic_link": false,
+    "mean_energy_proxy_uses_link_A": true,
+    "source_note": "DynamicRingSDFLattice inherits _acceleration. Its acceleration calls _edge_current, which uses link_A; base diagnostics compute mean_energy_proxy from that current phase. dynamic_link is used by dynamic-ring diagnostics and updates, not acceleration."
+  }
+}
